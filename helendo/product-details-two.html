@@ -5,6 +5,7 @@
 <!--   =>helendo/product-details-two.html  <=  21:56:12 GMT -->
 
 <!-- <= Uploaded @ https://market.radib.com => helendo/product-details-two.html <= RTL by HesDesign =>  13:53:18 GMT -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,7 +27,7 @@
 
 </head>
 
-<body class="">
+<body onload="javascript:setImage()" class="">
 
 
 
@@ -49,7 +50,8 @@
                     </div>
                     <div class="col-lg-4 col-md-4 col-6">
                         <div class="logo text-md-center">
-                                                        <a href="index.html"><img src="assets/images/logo/logos.svg" alt=""></a>
+                            <a style="font-size: 40px;" href="#">کوشا</a>
+
 
                         </div>
                     </div>
@@ -133,14 +135,10 @@
                 <div class="col-12">
                     <div class="row breadcrumb_box  align-items-center">
                         <div class="col-lg-6 col-md-6 col-sm-6 text-center text-sm-start">
-                            <h2 class="breadcrumb-title">عنوان محصول</h2>
                         </div>
                         <div class="col-lg-6  col-md-6 col-sm-6">
                             <!-- breadcrumb-list start -->
-                            <ul class="breadcrumb-list text-center text-sm-end">
-                                <li class="breadcrumb-item"><a href="index.html">خانه</a></li>
-                                <li class="breadcrumb-item active">عنوان محصول</li>
-                            </ul>
+
                             <!-- breadcrumb-list end -->
                         </div>
                     </div>
@@ -166,10 +164,10 @@
                             <div class="product-details-horizontal">
                                 <div class="product-details-images-horizontal">
 
-                                    <div class="easyzoom-style">
+                                    <div class="">
                                         <div class="easyzoom easyzoom--overlay">
-                                            <a href="assets/images/pic/IMG_3923.JPG" class="poppu-img">
-                                                <img src="assets/images/pic/IMG_3923.JPG" class="img-fluid" alt="">
+                                            <a href="" class="poppu-img">
+                                                <img id="newImage" src="" class="img-fluid" alt="">
                                             </a>
                                         </div>
                                     </div>
@@ -217,15 +215,22 @@
                                     </div>
 
                                 </div>
-                                <div class="product-details-thumbs-horizontal">
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_3923.JPG" alt="product image thumb"></div>
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_4360.JPG" alt="product image thumb"></div>
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_4359.JPG" alt="product image thumb"></div>
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_4358.JPG" alt="product image thumb"></div>
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_4357.JPG" alt="product image thumb"></div>
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_4356.JPG" alt="product image thumb"></div>
-                                    <div class="sm-image"><img style="width: 100px; height: 100px;" src="assets/images/pic/IMG_3926.JPG" alt="product image thumb"></div>
-                                </div>
+                                <!-- <div class="product-details-thumbs-horizontal">
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_3923.JPG" alt="product image thumb"></div>
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_4360.JPG" alt="product image thumb"></div>
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_4359.JPG" alt="product image thumb"></div>
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_4358.JPG" alt="product image thumb"></div>
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_4357.JPG" alt="product image thumb"></div>
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_4356.JPG" alt="product image thumb"></div>
+                                    <div class="sm-image"><img style="width: 100px; height: 100px;"
+                                            src="assets/images/pic/IMG_3926.JPG" alt="product image thumb"></div>
+                                </div> -->
                             </div>
                             <!--// Product Details Left -->
 
@@ -233,14 +238,15 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                             <div class="product-details-content ">
 
-                                <h5 class="font-weight--reguler mb-10">کد 1607</h5>
+                                <h5 id="productContent" class="font-weight--reguler mb-10"></h5>
 
                                 <h3 class="price">50.000 - 200.000 تومان</h3>
 
 
 
                                 <div class="quickview-peragraph mt-10">
-                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</p>
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        گرافیک است.</p>
                                 </div>
 
 
@@ -275,26 +281,33 @@
                                     <ul class="nav product-size-menu" role="tablist">
 
                                         <li class="tab__item nav-item active">
-                                            <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_58" role="tab">58</a>
+                                            <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_58"
+                                                role="tab">58</a>
                                         </li>
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_56" role="tab">56</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_56"
+                                                role="tab">56</a>
                                         </li>
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_54" role="tab">54</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_54"
+                                                role="tab">54</a>
                                         </li>
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_52" role="tab">52</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_52"
+                                                role="tab">52</a>
                                         </li>
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_50" role="tab">50</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_50"
+                                                role="tab">50</a>
                                         </li>
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_48" role="tab">48</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_48"
+                                                role="tab">48</a>
                                         </li>
 
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_46" role="tab">46</a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_46"
+                                                role="tab">46</a>
                                         </li>
 
                                     </ul>
@@ -317,14 +330,17 @@
 
                                     <ul class="nav product-color-menu" role="tablist">
                                         <li class="tab__item nav-item active">
-                                            <a style="background-color: black;" class="nav-link active" data-bs-toggle="tab" href="#tab_list_black" role="tab"></a>
+                                            <a style="background-color: black;" class="nav-link active"
+                                                data-bs-toggle="tab" href="#tab_list_black" role="tab"></a>
                                         </li>
                                         <li class="tab__item nav-item">
-                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_white" role="tab"></a>
+                                            <a class="nav-link" data-bs-toggle="tab" href="#tab_list_white"
+                                                role="tab"></a>
                                         </li>
 
-                                        <li class="tab__item nav-item" >
-                                            <a style="background-color: green;" class="nav-link" data-bs-toggle="tab" href="#tab_list_green" role="tab"></a>
+                                        <li class="tab__item nav-item">
+                                            <a style="background-color: green;" class="nav-link" data-bs-toggle="tab"
+                                                href="#tab_list_green" role="tab"></a>
                                         </li>
                                     </ul>
 
@@ -335,13 +351,16 @@
                                     <div class="quickview-cart-box">
                                         <div class="quickview-quality">
                                             <div class="cart-plus-minus">
-                                                <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0">
+                                                <input class="cart-plus-minus-box" type="text" name="qtybutton"
+                                                    value="0">
                                             </div>
                                         </div>
 
                                         <div class="quickview-button">
                                             <div class="quickview-cart button">
-                                                <a href="#" class="btn--lg btn--black font-weight--reguler text-white">افزودن به سبد خرید</a>
+                                                <a href="#"
+                                                    class="btn--lg btn--black font-weight--reguler text-white">افزودن به
+                                                    سبد خرید</a>
                                             </div>
                                             <div class="quickview-wishlist button">
                                                 <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a>
@@ -364,7 +383,7 @@
                                     </div>
                                 </div>
 
-                                
+
 
                             </div>
                         </div>
@@ -397,12 +416,17 @@
                                                 <div class="col-lg-7 order-md-1 order-2">
                                                     <div class="details mt-30">
                                                         <h5 class="mb-10">جزئیات</h5>
-                                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.</p>
+                                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                                            با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
+                                                            و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
+                                                            کاربردی می باشد.</p>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 order-md-2 order-1">
                                                     <div class="images">
-                                                        <img src="assets/images/pic/IMG_4266.JPG" class="img-fluid" alt="">
+                                                        <img src="assets/images/pic/IMG_4266.JPG" class="img-fluid"
+                                                            alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -414,18 +438,25 @@
                                                         <div class="pro_feature">
                                                             <h5 class="title_3 mb-10">امکانات</h5>
                                                             <ul class="feature_list">
-                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم</a></li>
-                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم ایپسوم متن ساختگی با تولید سادگی</a></li>
-                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم ایپسوم متن ساختگی با تولید</a></li>
-                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم ایپسوم متن ساختگی با تولید دانش</a></li>
-                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم ایپسوم متن ساختگی</a></li>
+                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم
+                                                                        ایپسوم متن ساختگی با تولید سادگی نامفهوم</a>
+                                                                </li>
+                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم
+                                                                        ایپسوم متن ساختگی با تولید سادگی</a></li>
+                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم
+                                                                        ایپسوم متن ساختگی با تولید</a></li>
+                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم
+                                                                        ایپسوم متن ساختگی با تولید دانش</a></li>
+                                                                <li><a href="#"><i class="arrow_triangle-right"></i>لورم
+                                                                        ایپسوم متن ساختگی</a></li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-5 order-md-2 order-1">
                                                     <div class="images">
-                                                        <img src="assets/images/pic/IMG_4266.JPG" class="img-fluid" alt="">
+                                                        <img src="assets/images/pic/IMG_4266.JPG" class="img-fluid"
+                                                            alt="">
                                                     </div>
                                                 </div>
                                             </div>
@@ -456,7 +487,8 @@
 
                                     <!-- Start RAting Area -->
                                     <div class="rating_wrap mb-30">
-                                        <h4 class="rating-title-2">اولین نفری باشید که برای "عنوان محصول" دیدگاهی ارسال می کنید</h4>
+                                        <h4 class="rating-title-2">اولین نفری باشید که برای "عنوان محصول" دیدگاهی ارسال
+                                            می کنید</h4>
                                         <p>امتیاز شما</p>
                                         <div class="rating_list">
                                             <div class="product-rating d-flex">
@@ -510,195 +542,591 @@
                             </div>
                         </div>
 
-                        <div class="product-slider-active">
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4259.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-                                            <span class="ribbon out-of-stock ">
-                                            اتمام موجودی
-                                        </span>
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
+                        <div class="tab-content mt-30">
+                            <div class="tab-pane fade show active" id="tab_list_01">
+                                <!-- product-slider-active -->
+                                <div class="product-slider-active">
+                                    <!-- Single Product Item Start -->
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/13.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon out-of-stock ">
+                                                    اتمام موجودی
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">13</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">400.000</span> - <span class="old-price"> 800.000 تومان</span>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/2383-1.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                                                <!-- 
+                                                                    <span class="ribbon out-of-stock ">
+                                                                        اتمام موجودی
+                                                                    </span> -->
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">2383</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!-- Single Product Item End -->
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4344-4.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4344</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-2.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-3-1.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                        
+                                </div>
                             </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4254.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
+                        
+                            <div class="tab-pane" id="tab_list_02">
+                                <div class="product-slider-active">
+                                    <!-- Single Product Item Start -->
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-1-2.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">400.000</span> - <span class="old-price"> 800.000 تومان</span>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-1.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon out-of-stock ">
+                                                    اتمام موجودی
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!-- Single Product Item End -->
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-2-2.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon out-of-stock ">
+                                                    اتمام موجودی
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-2.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon out-of-stock ">
+                                                    اتمام موجودی
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-3-1.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon out-of-stock ">
+                                                    اتمام موجودی
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4346-3.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon out-of-stock ">
+                                                    اتمام موجودی
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4346</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4258.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
+                            <div class="tab-pane fade" id="tab_list_03">
+                                <!-- product-slider-active -->
+                                <div class="product-slider-active">
+                                    <!-- Single Product Item Start -->
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4344-2-1.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4344</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">500.000 تومان</span>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4344-3.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4344</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!-- Single Product Item End -->
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4344-4-2.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4344</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/4344-4.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">4344</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                        
+                        
+                                </div>
                             </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_3928.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                            <span class="ribbon onsale">
-                                        -14%
-                                        </span>
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
+                            <div class="tab-pane fade" id="tab_list_04">
+                                <!-- product-slider-active -->
+                                <div class="product-slider-active">
+                                    <!-- Single Product Item Start -->
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/14.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">14</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">500.000 تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">400.000</span> - <span class="old-price"> 800.000 تومان</span>
-                                        </div>
-                                    </div>
-                                </div><!-- Single Product Item End -->
+                        
+                                </div>
                             </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4267.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
+                            <div class="tab-pane fade" id="tab_list_05">
+                                <!-- product-slider-active -->
+                                <div class="product-slider-active">
+                                    <!-- Single Product Item Start -->
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/16.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                                <span class="ribbon onsale">
+                                                    -14%
+                                                </span>
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">16</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">400.000</span> - <span class="old-price"> 800.000 تومان</span>
-                                        </div>
-                                    </div>
-                                </div><!-- Single Product Item End -->
+                        
+                                </div>
                             </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4259.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
+                            <div class="tab-pane fade" id="tab_list_08">
+                                <!-- product-slider-active -->
+                                <div class="product-slider-active">
+                                    <!-- Single Product Item Start -->
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/2383-1.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">2383</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">500.000 تومان</span>
+                        
+                                    <div class="single-product-item text-center">
+                                        <div class="products-images">
+                                            <a href="product-details.html" class="product-thumbnail">
+                                                <img src="../helendo/assets/images/product/2383-2.jpg" class="img-fluid" alt="Product Images"
+                                                    width="300" height="300">
+                        
+                                            </a>
+                                            <div class="product-actions">
+                                                <a href="#" data-bs-toggle="modal" data-bs-target="#prodect-modal"><i
+                                                        class="p-icon icon-plus"></i><span class="tool-tip">مشاهده
+                                                        جزئیات</span></a>
+                                                <a href="product-details.html"><i class="p-icon icon-bag2"></i> <span class="tool-tip">افزودن به
+                                                        سبد
+                                                        خرید</span></a>
+                                                <a href="wishlist.html"><i class="p-icon icon-heart"></i> <span class="tool-tip">افزودن به علاقه
+                                                        مندی
+                                                        ها</span></a>
+                                            </div>
+                                        </div>
+                                        <div class="product-content">
+                                            <h6 class="prodect-title"><a href="product-details.html">2383</a></h6>
+                                            <div class="prodect-price">
+                                                <span class="new-price">400.000</span> - <span class="old-price"> 800.000
+                                                    تومان</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div><!-- Single Product Item End -->
+                        
+                                </div>
                             </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4261.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">500.000 تومان</span>
-                                        </div>
-                                    </div>
-                                </div><!-- Single Product Item End -->
-                            </div>
-
-                            <div class="col-lg-12">
-                                <!-- Single Product Item Start -->
-                                <div class="single-product-item text-center">
-                                    <div class="products-images">
-                                        <a href="#" class="product-thumbnail">
-                                            <img src="assets/images/pic/IMG_4262.JPG" class="img-fluid" alt="Product Images" width="300" height="300">
-
-                                        </a>
-                                        <div class="product-actions">
-                                            <a style="background-color: black;" href="#" ><i ></i><span class="tool-tip">رنگ سبز</span></a>
-                                            <a style="background-color: white;" href="#" ><i ></i><span class="tool-tip">رنگ سفید</span></a>
-                                            <a style="background-color: green;" href="#" ><i ></i><span class="tool-tip">رنگ مشکی</span></a>
-                                        </div>
-                                    </div>
-                                    <div class="product-content">
-                                        <h6 class="prodect-title"><a href="#">عنوان محصول</a></h6>
-                                        <div class="prodect-price">
-                                            <span class="new-price">400.000</span> - <span class="old-price"> 800.000 تومان</span>
-                                        </div>
-                                    </div>
-                                </div><!-- Single Product Item End -->
-                            </div>
+                        
                         </div>
                     </div>
 
@@ -708,115 +1136,127 @@
         </div>
 
         <!--====================  footer area ====================-->
-        <div class="footer-area-wrapper"> 
-            <div class="footer-area section-space--ptb_120"> 
-                <div class="container"> 
-                    <div class="row footer-widget-wrapper"> 
-                        <div class="col-lg-4 col-md-4 col-sm-6 footer-widget"> 
-                            <h6 class="footer-widget__title mb-20">آدرس</h6> 
-                            <ul class="footer-widget__list"> 
-                                <li><i class="icon_pin"></i>نشانی دفتر مرکزی: تهران، خیابان فردوسی، خیابان تقوی، کوچه بهداشت، پلاک ۱ (ساختمان کوشا)، واحد ۱
+        <div class="footer-area-wrapper">
+            <div class="footer-area section-space--ptb_120">
+                <div class="container">
+                    <div class="row footer-widget-wrapper">
+                        <div class="col-lg-4 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">آدرس</h6>
+                            <ul class="footer-widget__list">
+                                <li><i class="icon_pin"></i>نشانی دفتر مرکزی: تهران، خیابان فردوسی، خیابان تقوی، کوچه
+                                    بهداشت، پلاک ۱ (ساختمان کوشا)، واحد ۱
                                     نشانی فروشگاه:‌ تهران، ساختمان پلاسکو، طبقه همکف، پلاک ۶
-                                    
-                                </li>                                     
-                                <li> <i class="icon_phone"></i><a href="tel:+9821-66712591" class="hover-style-link">+9821-66712591</a>
-                                    <li> <i class="icon_phone"></i><a href="tel:+9821-66711368" class="hover-style-link">+9821-66711368</a>
-                                        <li> <i class="icon_phone"></i><a href="tel:+9821-66750410" class="hover-style-link">+9821-66750410</a>
-                                </li>                                     
-                            </ul>                                 
-                            <ul class="list footer-social-networks mt-25"> 
-                                <li class="item"> <a href="https://telegram.org/kooshamenswear" target="_blank" aria-label="telegram"> <i class="social social_facebook"></i> </a> 
-                                </li>                                                                     
-                                <li class="item"> <a href="https://instagram.com/kooshamenswear_official" target="_blank" aria-label="Instagram"> <i class="social social_instagram"></i> </a> 
-                                </li> 
-                                <li class="item"> <a href="https://instagram.com/kooshamenswear" target="_blank" aria-label="Instagram"> <i class="social social_instagram"></i> </a> 
-                                </li>      
-                                <li class="item"> <a href="https://instagram.com/kooshamenswear" target="_blank" aria-label="email"> <i class="social social_instagram"></i> </a> 
-                                </li>                                   
-                            </ul>                                 
-                        </div>                             
-                        <div class="col-lg-3 col-md-4 col-sm-6 footer-widget"> 
-                            <h6 class="footer-widget__title mb-20">کمک و اطلاعات</h6> 
-                            <ul class="footer-widget__list"> 
+
+                                </li>
+                                <li> <i class="icon_phone"></i><a href="tel:+9821-66712591"
+                                        class="hover-style-link">+9821-66712591</a>
+                                <li> <i class="icon_phone"></i><a href="tel:+9821-66711368"
+                                        class="hover-style-link">+9821-66711368</a>
+                                <li> <i class="icon_phone"></i><a href="tel:+9821-66750410"
+                                        class="hover-style-link">+9821-66750410</a>
+                                </li>
+                            </ul>
+                            <ul class="list footer-social-networks mt-25">
+                                <li class="item"> <a href="https://telegram.org/kooshamenswear" target="_blank"
+                                        aria-label="telegram"> <i class="social social_facebook"></i> </a>
+                                </li>
+                                <li class="item"> <a href="https://instagram.com/kooshamenswear_official"
+                                        target="_blank" aria-label="Instagram"> <i class="social social_instagram"></i>
+                                    </a>
+                                </li>
+                                <li class="item"> <a href="https://instagram.com/kooshamenswear" target="_blank"
+                                        aria-label="Instagram"> <i class="social social_instagram"></i> </a>
+                                </li>
+                                <li class="item"> <a href="https://instagram.com/kooshamenswear" target="_blank"
+                                        aria-label="email"> <i class="social social_instagram"></i> </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">کمک و اطلاعات</h6>
+                            <ul class="footer-widget__list">
                                 <li><a href="#" class="hover-style-link">کمک و ارتباط با ما</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#" class="hover-style-link">بازپرداخت</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#" class="hover-style-link">فروشگاه های آنلاین</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#" class="hover-style-link">شرایط و ضوابط</a>
-                                </li>                                     
-                            </ul>                                 
-                        </div>                             
-                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget"> 
-                            <h6 class="footer-widget__title mb-20">درباره ما</h6> 
-                            <ul class="footer-widget__list"> 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-4 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">درباره ما</h6>
+                            <ul class="footer-widget__list">
                                 <li><a href="#" class="hover-style-link">درباره ما</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#" class="hover-style-link">خدمات ما</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#" class="hover-style-link">سوالات متداول</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#" class="hover-style-link">ارتباط با ما</a>
-                                </li>                                     
-                            </ul>                                 
-                        </div>                             
-                        <div class="col-lg-3 col-md-6 col-sm-6 footer-widget"> 
-                            <h6 class="footer-widget__title mb-20">دریافت خبرنامه</h6> 
-                            <div class="footer-widget__newsletter mt-30"> 
-                                <input type="text" placeholder="آدرس ایمیل شما"/> 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 footer-widget">
+                            <h6 class="footer-widget__title mb-20">دریافت خبرنامه</h6>
+                            <div class="footer-widget__newsletter mt-30">
+                                <input type="text" placeholder="آدرس ایمیل شما" />
                                 <button class="submit-button"><i class="icon-arrow-right"></i>
-                                </button>                                     
-                            </div>                                 
-                            <ul class="footer-widget__footer-menu  section-space--mt_60 d-none d-lg-block"> 
+                                </button>
+                            </div>
+                            <ul class="footer-widget__footer-menu  section-space--mt_60 d-none d-lg-block">
                                 <li><a href="#">شرایط</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#">خط مشی</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#">نقشه</a>
-                                </li>                                     
-                            </ul>                                 
-                        </div>                             
-                    </div>                         
-                </div>                     
-            </div>                 
-            <div class="footer-copyright-area section-space--pb_30"> 
-                <div class="container"> 
-                    <div class="row align-items-center"> 
-                        <div class="col-lg-4 col-md-5 text-center text-md-start"> 
-                            <ul class="footer-widget__footer-menu"> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright-area section-space--pb_30">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-5 text-center text-md-start">
+                            <ul class="footer-widget__footer-menu">
                                 <li><a href="#">شرایط</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#">خط مشی</a>
-                                </li>                                     
+                                </li>
                                 <li><a href="#">نقشه</a>
-                                </li>                                     
-                            </ul>                                 
-                        </div>                             
-                        <div class="col-lg-4 col-md-2 text-center"> 
-                            <div class="footer-logo"> <a href="#"><img src="assets/images/logo/logoa.svg" alt="Logo images"/></a> 
-                            </div>                                 
-                        </div>                             
-                        <div class="col-lg-4 col-md-5 order-md-3"> 
-                            <div class="footer-bottom-social"> 
-                                <h6 class="title">شبکات اجتماعی ما را دنبال نمایید.</h6> 
-                                <ul class="list footer-social-networks "> 
-                                    <li class="item"> <a href="https://twitter.com/" target="_blank" aria-label="Twitter"> <i class="social social_facebook"></i> </a> 
-                                    </li>                                         
-                                    <li class="item"> <a href="https://facebook.com/" target="_blank" aria-label="Facebook"> <i class="social social_twitter"></i> </a> 
-                                    </li>                                         
-                                    <li class="item"> <a href="https://instagram.com/" target="_blank" aria-label="Instagram"> <i class="social social_tumblr"></i> </a> 
-                                    </li>                                         
-                                </ul>                                     
-                            </div>                                 
-                        </div>                             
-                    </div>                         
-                    <div class="row"> 
-                        <div class="col-lg-12"> <span class="copyright-text text-center  section-space--mt_40">Powered by <b>Seyed</b></span>
-                        </div>                             
-                    </div>                         
-                </div>                     
-            </div>                 
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-2 text-center">
+                            <a style="font-size: 40px;" href="#">کوشا</a>
+                        </div>
+                        <div class="col-lg-4 col-md-5 order-md-3">
+                            <div class="footer-bottom-social">
+                                <h6 class="title">شبکات اجتماعی ما را دنبال نمایید.</h6>
+                                <ul class="list footer-social-networks ">
+                                    <li class="item"> <a href="https://twitter.com/" target="_blank"
+                                            aria-label="Twitter"> <i class="social social_facebook"></i> </a>
+                                    </li>
+                                    <li class="item"> <a href="https://facebook.com/" target="_blank"
+                                            aria-label="Facebook"> <i class="social social_twitter"></i> </a>
+                                    </li>
+                                    <li class="item"> <a href="https://instagram.com/" target="_blank"
+                                            aria-label="Instagram"> <i class="social social_tumblr"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12"> <span class="copyright-text text-center  section-space--mt_40">Powered
+                                by <b>Seyed</b></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--====================  End of footer area  ====================-->
 
@@ -852,7 +1292,8 @@
         <div class="modal-dialog  modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span class="icon-cross" aria-hidden="true"></span></button>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close"><span
+                            class="icon-cross" aria-hidden="true"></span></button>
                 </div>
                 <div class="modal-body container">
                     <div class="row align-items-center">
@@ -870,61 +1311,77 @@
                             </div>
                             <!-- Thumbnail Large Image End -->
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
-                                <div class="product-details-content quickview-content-wrap "> 
-                                    <h5 class="font-weight--reguler mb-10">عنوان محصول</h5> 
-                                    <div class="quickview-ratting-review mb-10"> 
-                                        <div class="quickview-ratting-wrap"> 
-                                            <div class="quickview-ratting"> <i class="yellow icon_star"></i> <i class="yellow icon_star"></i> <i class="yellow icon_star"></i> <i class="yellow icon_star"></i> <i class="yellow icon_star"></i> 
-                                            </div>                                             <a href="#"> 2 نظر</a> 
-                                        </div>                                         
-                                    </div>                                     
-                                    <h3 class="price">199.000 تومان</h3> 
-                                    <div class="stock in-stock mt-10"> 
-                                        <p>وضعیت: <span>موجود در انبار</span></p> 
-                                    </div>                                     
-                                    <div class="quickview-peragraph mt-10"> 
-                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان است.</p> 
-                                    </div>                                     
-                                    <div class="quickview-action-wrap mt-30"> 
-                                        <div class="quickview-cart-box"> 
-                                            <div class="quickview-quality"> 
-                                                <div class="cart-plus-minus"> 
-                                                    <input class="cart-plus-minus-box" type="text" name="qtybutton" value="0"/> 
-                                                </div>                                                 
-                                            </div>                                             
-                                            <div class="quickview-button"> 
-                                                <div class="quickview-cart button"> <a href="#" class="btn--lg btn--black font-weight--reguler text-white">افزودن به سبد خرید</a> 
-                                                </div>                                                 
-                                                <div class="quickview-wishlist button"> <a title="Add to wishlist" href="#"><i class="icon-heart"></i></a> 
-                                                </div>                                                 
-                                            </div>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="product_meta mt-30"> 
-                                        <div class="sku_wrapper item_meta"> <span class="label"> موجودی: </span> <span class="sku"> 502 </span> 
-                                        </div>                                         
-                                        <div class="posted_in item_meta"> <span class="label">دسته بندی: </span><a href="#">آشپزخانه</a>, <a href="#">مبلمان</a> 
-                                        </div>                                         
-                                        <div class="tagged_as item_meta"> <span class="label">برچسب: </span><a href="#">چوب</a> 
-                                        </div>                                         
-                                    </div>                                     
-                                    <div class="product_socials section-space--mt_60"> <span class="label">اشتراک گذاری :</span> 
-                                        <ul class="helendo-social-share socials-inline"> 
-                                            <li> <a class="share-twitter helendo-twitter" href="#" target="_blank"><i class="social_twitter"></i></a> 
-                                            </li>                                             
-                                            <li> <a class="share-facebook helendo-facebook" href="#" target="_blank"><i class="social_facebook"></i></a> 
-                                            </li>                                             
-                                            <li> <a class="share-google-plus helendo-google-plus" href="#" target="_blank"><i class="social_googleplus"></i></a> 
-                                            </li>                                             
-                                            <li> <a class="share-pinterest helendo-pinterest" href="#" target="_blank"><i class="social_pinterest"></i></a> 
-                                            </li>                                             
-                                            <li> <a class="share-linkedin helendo-linkedin" href="#" target="_blank"><i class="social_linkedin"></i></a> 
-                                            </li>                                             
-                                        </ul>                                         
-                                    </div>                                     
-                                </div>                                 
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="product-details-content quickview-content-wrap ">
+                                <h5 class="font-weight--reguler mb-10">عنوان محصول</h5>
+                                <div class="quickview-ratting-review mb-10">
+                                    <div class="quickview-ratting-wrap">
+                                        <div class="quickview-ratting"> <i class="yellow icon_star"></i> <i
+                                                class="yellow icon_star"></i> <i class="yellow icon_star"></i> <i
+                                                class="yellow icon_star"></i> <i class="yellow icon_star"></i>
+                                        </div> <a href="#"> 2 نظر</a>
+                                    </div>
+                                </div>
+                                <h3 class="price">199.000 تومان</h3>
+                                <div class="stock in-stock mt-10">
+                                    <p>وضعیت: <span>موجود در انبار</span></p>
+                                </div>
+                                <div class="quickview-peragraph mt-10">
+                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                                        است.</p>
+                                </div>
+                                <div class="quickview-action-wrap mt-30">
+                                    <div class="quickview-cart-box">
+                                        <div class="quickview-quality">
+                                            <div class="cart-plus-minus">
+                                                <input class="cart-plus-minus-box" type="text" name="qtybutton"
+                                                    value="0" />
+                                            </div>
+                                        </div>
+                                        <div class="quickview-button">
+                                            <div class="quickview-cart button"> <a href="#"
+                                                    class="btn--lg btn--black font-weight--reguler text-white">افزودن به
+                                                    سبد خرید</a>
+                                            </div>
+                                            <div class="quickview-wishlist button"> <a title="Add to wishlist"
+                                                    href="#"><i class="icon-heart"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product_meta mt-30">
+                                    <div class="sku_wrapper item_meta"> <span class="label"> موجودی: </span> <span
+                                            class="sku"> 502 </span>
+                                    </div>
+                                    <div class="posted_in item_meta"> <span class="label">دسته بندی: </span><a
+                                            href="#">آشپزخانه</a>, <a href="#">مبلمان</a>
+                                    </div>
+                                    <div class="tagged_as item_meta"> <span class="label">برچسب: </span><a
+                                            href="#">چوب</a>
+                                    </div>
+                                </div>
+                                <div class="product_socials section-space--mt_60"> <span class="label">اشتراک گذاری
+                                        :</span>
+                                    <ul class="helendo-social-share socials-inline">
+                                        <li> <a class="share-twitter helendo-twitter" href="#" target="_blank"><i
+                                                    class="social_twitter"></i></a>
+                                        </li>
+                                        <li> <a class="share-facebook helendo-facebook" href="#" target="_blank"><i
+                                                    class="social_facebook"></i></a>
+                                        </li>
+                                        <li> <a class="share-google-plus helendo-google-plus" href="#"
+                                                target="_blank"><i class="social_googleplus"></i></a>
+                                        </li>
+                                        <li> <a class="share-pinterest helendo-pinterest" href="#" target="_blank"><i
+                                                    class="social_pinterest"></i></a>
+                                        </li>
+                                        <li> <a class="share-linkedin helendo-linkedin" href="#" target="_blank"><i
+                                                    class="social_linkedin"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -933,152 +1390,165 @@
     <!-- Modal end -->
 
     <!-- Modal -->
-    <div class="header-login-register-wrapper modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true"> 
-            <div class="modal-dialog modal-dialog-centered"> 
-                <div class="modal-content"> 
-                    <div class="modal-box-wrapper">
-                        <div class="helendo-tabs"> 
-                            <ul class="nav" role="tablist"> 
-                                <li class="tab__item nav-item active"> <a class="nav-link" data-bs-toggle="tab" href="#tab_list_06" role="tab" aria-selected="false">ورود</a> 
-                                </li>                                 
-                                <li class="tab__item nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_07" role="tab" aria-selected="true">ثبت نام</a> 
-                                </li>                                 
-                            </ul>                             
-                        </div>                         
-                        <div class="tab-content content-modal-box"> 
-                            <div class="tab-pane fade" id="tab_list_06" role="tabpanel"> 
-                                <form action="#" class="account-form-box"> 
-                                    <h6>وارد حساب خود شوید.</h6> 
-                                    <div class="single-input"> 
-                                        <input type="text" placeholder="نام کاربری"/> 
-                                    </div>                                     
-                                    <div class="single-input"> 
-                                        <input type="password" placeholder="گذرواژه"/> 
-                                    </div>                                     
-                                    <div class="checkbox-wrap mt-10"> 
-                                        <label class="label-for-checkbox inline mt-15"> 
-                                            <input class="input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"/> <span>من را به خاطر بسپار</span> 
-                                        </label>                                         <a href="#" class="mt-10">گذرواژه خود را فراموش کرده اید؟</a> 
-                                    </div>                                     
-                                    <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ورود</a> 
-                                    </div>                                     
-                                </form>                                 
-                            </div>                             
-                            <div class="tab-pane fade active show" id="tab_list_07" role="tabpanel"> 
-                                <form action="#" class="account-form-box"> 
-                                    <h6>یک حساب کاربری ایجاد نمایید.</h6> 
-                                    <div class="single-input"> 
-                                        <input type="text" placeholder="نام کاربری"/> 
-                                    </div>                                     
-                                    <div class="single-input"> 
-                                        <input type="text" placeholder="ایمیل"/> 
-                                    </div>                                     
-                                    <div class="single-input"> 
-                                        <input type="password" placeholder="گذرواژه"/> 
-                                    </div>                                     
-                                    <p class="mt-15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ما <a href="#" class="privacy-policy-link" target="_blank">سیاست حفظ حریم شخصی</a> را رعایت می کنیم.</p> 
-                                    <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ثبت نام</a> 
-                                    </div>                                     
-                                </form>                                 
-                            </div>                             
+    <div class="header-login-register-wrapper modal fade" id="exampleModal" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-box-wrapper">
+                    <div class="helendo-tabs">
+                        <ul class="nav" role="tablist">
+                            <li class="tab__item nav-item active"> <a class="nav-link" data-bs-toggle="tab"
+                                    href="#tab_list_06" role="tab" aria-selected="false">ورود</a>
+                            </li>
+                            <li class="tab__item nav-item"> <a class="nav-link active" data-bs-toggle="tab"
+                                    href="#tab_list_07" role="tab" aria-selected="true">ثبت نام</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content content-modal-box">
+                        <div class="tab-pane fade" id="tab_list_06" role="tabpanel">
+                            <form action="#" class="account-form-box">
+                                <h6>وارد حساب خود شوید.</h6>
+                                <div class="single-input">
+                                    <input type="text" placeholder="نام کاربری" />
+                                </div>
+                                <div class="single-input">
+                                    <input type="password" placeholder="گذرواژه" />
+                                </div>
+                                <div class="checkbox-wrap mt-10">
+                                    <label class="label-for-checkbox inline mt-15">
+                                        <input class="input-checkbox" name="rememberme" type="checkbox" id="rememberme"
+                                            value="forever" /> <span>من را به خاطر بسپار</span>
+                                    </label> <a href="#" class="mt-10">گذرواژه خود را فراموش کرده اید؟</a>
+                                </div>
+                                <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ورود</a>
+                                </div>
+                            </form>
                         </div>
-                    </div>                     
-                </div>                 
-            </div>             
+                        <div class="tab-pane fade active show" id="tab_list_07" role="tabpanel">
+                            <form action="#" class="account-form-box">
+                                <h6>یک حساب کاربری ایجاد نمایید.</h6>
+                                <div class="single-input">
+                                    <input type="text" placeholder="نام کاربری" />
+                                </div>
+                                <div class="single-input">
+                                    <input type="text" placeholder="ایمیل" />
+                                </div>
+                                <div class="single-input">
+                                    <input type="password" placeholder="گذرواژه" />
+                                </div>
+                                <p class="mt-15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                    از طراحان گرافیک است. ما <a href="#" class="privacy-policy-link"
+                                        target="_blank">سیاست حفظ حریم شخصی</a> را رعایت می کنیم.</p>
+                                <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ثبت نام</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
 
     <!-- Modal -->
-    <div class="header-login-register-wrapper modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true"> 
-            <div class="modal-dialog modal-dialog-centered"> 
-                <div class="modal-content"> 
-                    <div class="modal-box-wrapper">
-                        <div class="helendo-tabs"> 
-                            <ul class="nav" role="tablist"> 
-                                <li class="tab__item nav-item active"> <a class="nav-link" data-bs-toggle="tab" href="#tab_list_06" role="tab" aria-selected="false">ورود</a> 
-                                </li>                                 
-                                <li class="tab__item nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#tab_list_07" role="tab" aria-selected="true">ثبت نام</a> 
-                                </li>                                 
-                            </ul>                             
-                        </div>                         
-                        <div class="tab-content content-modal-box"> 
-                            <div class="tab-pane fade" id="tab_list_06" role="tabpanel"> 
-                                <form action="#" class="account-form-box"> 
-                                    <h6>وارد حساب خود شوید.</h6> 
-                                    <div class="single-input"> 
-                                        <input type="text" placeholder="نام کاربری"/> 
-                                    </div>                                     
-                                    <div class="single-input"> 
-                                        <input type="password" placeholder="گذرواژه"/> 
-                                    </div>                                     
-                                    <div class="checkbox-wrap mt-10"> 
-                                        <label class="label-for-checkbox inline mt-15"> 
-                                            <input class="input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever"/> <span>من را به خاطر بسپار</span> 
-                                        </label>                                         <a href="#" class="mt-10">گذرواژه خود را فراموش کرده اید؟</a> 
-                                    </div>                                     
-                                    <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ورود</a> 
-                                    </div>                                     
-                                </form>                                 
-                            </div>                             
-                            <div class="tab-pane fade active show" id="tab_list_07" role="tabpanel"> 
-                                <form action="#" class="account-form-box"> 
-                                    <h6>یک حساب کاربری ایجاد نمایید.</h6> 
-                                    <div class="single-input"> 
-                                        <input type="text" placeholder="نام کاربری"/> 
-                                    </div>                                     
-                                    <div class="single-input"> 
-                                        <input type="text" placeholder="ایمیل"/> 
-                                    </div>                                     
-                                    <div class="single-input"> 
-                                        <input type="password" placeholder="گذرواژه"/> 
-                                    </div>                                     
-                                    <p class="mt-15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. ما <a href="#" class="privacy-policy-link" target="_blank">سیاست حفظ حریم شخصی</a> را رعایت می کنیم.</p> 
-                                    <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ثبت نام</a> 
-                                    </div>                                     
-                                </form>                                 
-                            </div>                             
+    <div class="header-login-register-wrapper modal fade" id="exampleModal" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-box-wrapper">
+                    <div class="helendo-tabs">
+                        <ul class="nav" role="tablist">
+                            <li class="tab__item nav-item active"> <a class="nav-link" data-bs-toggle="tab"
+                                    href="#tab_list_06" role="tab" aria-selected="false">ورود</a>
+                            </li>
+                            <li class="tab__item nav-item"> <a class="nav-link active" data-bs-toggle="tab"
+                                    href="#tab_list_07" role="tab" aria-selected="true">ثبت نام</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content content-modal-box">
+                        <div class="tab-pane fade" id="tab_list_06" role="tabpanel">
+                            <form action="#" class="account-form-box">
+                                <h6>وارد حساب خود شوید.</h6>
+                                <div class="single-input">
+                                    <input type="text" placeholder="نام کاربری" />
+                                </div>
+                                <div class="single-input">
+                                    <input type="password" placeholder="گذرواژه" />
+                                </div>
+                                <div class="checkbox-wrap mt-10">
+                                    <label class="label-for-checkbox inline mt-15">
+                                        <input class="input-checkbox" name="rememberme" type="checkbox" id="rememberme"
+                                            value="forever" /> <span>من را به خاطر بسپار</span>
+                                    </label> <a href="#" class="mt-10">گذرواژه خود را فراموش کرده اید؟</a>
+                                </div>
+                                <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ورود</a>
+                                </div>
+                            </form>
                         </div>
-                    </div>                     
-                </div>                 
-            </div>             
+                        <div class="tab-pane fade active show" id="tab_list_07" role="tabpanel">
+                            <form action="#" class="account-form-box">
+                                <h6>یک حساب کاربری ایجاد نمایید.</h6>
+                                <div class="single-input">
+                                    <input type="text" placeholder="نام کاربری" />
+                                </div>
+                                <div class="single-input">
+                                    <input type="text" placeholder="ایمیل" />
+                                </div>
+                                <div class="single-input">
+                                    <input type="password" placeholder="گذرواژه" />
+                                </div>
+                                <p class="mt-15">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
+                                    از طراحان گرافیک است. ما <a href="#" class="privacy-policy-link"
+                                        target="_blank">سیاست حفظ حریم شخصی</a> را رعایت می کنیم.</p>
+                                <div class="button-box mt-25"> <a href="#" class="btn btn--full btn--black">ثبت نام</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
 
     <!--====================  mobile menu overlay ====================-->
     <div class="mobile-menu-overlay" id="mobile-menu-overlay">
         <div class="mobile-menu-overlay__inner">
             <div class="mobile-menu-close-box text-start">
-                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"> <i class="icon-cross2"></i></span>
+                <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"> <i
+                        class="icon-cross2"></i></span>
             </div>
             <div class="mobile-menu-overlay__body">
-        
-                <nav class="offcanvas-navigation"> 
-                        <ul> 
-                            <li class="has-children"> <a href="#">معرفی مجموعه</a>                              
-                            </li>                             
-                            <li class="has-children"> <a href="#">محصولات</a>                       
-                            </li>                             
-                            <li class="has-children"> <a href="#">خدمات سازمانی</a> 
-                            </li>                             
-                            <li class="has-children"> <a href="#">مقالات مفید</a>                              
-                            </li>         
-                            <li class="has-children"> <a href="#">تماس با ما</a>                              
-                            </li>                             
-                            <li class="has-children"> <a href="#">درخواست همکاری</a>                       
-                            </li>                             
-                            <li class="has-children"> <a href="#">تصاویر کارگاهی</a> 
-                            </li>                                                    
-                        </ul>                         
-                    </nav>
 
-                <div class="mobile-menu-contact-info section-space--mt_60"> 
-                        <h6>ارتباط با ما</h6> 
-                        <p class="tm1">تهران، میدان فردوسی، بلوار فردوسی، فروشگاه هلندو<br/>
-                            example@info.com </p>
-                        <p class="tm-ltr tm2">
-                            021 0000 0000 </p>
-                    </div>
+                <nav class="offcanvas-navigation">
+                    <ul>
+                        <li class="has-children"> <a href="#">معرفی مجموعه</a>
+                        </li>
+                        <li class="has-children"> <a href="#">محصولات</a>
+                        </li>
+                        <li class="has-children"> <a href="#">خدمات سازمانی</a>
+                        </li>
+                        <li class="has-children"> <a href="#">مقالات مفید</a>
+                        </li>
+                        <li class="has-children"> <a href="#">تماس با ما</a>
+                        </li>
+                        <li class="has-children"> <a href="#">درخواست همکاری</a>
+                        </li>
+                        <li class="has-children"> <a href="#">تصاویر کارگاهی</a>
+                        </li>
+                    </ul>
+                </nav>
 
-                    
+                <div class="mobile-menu-contact-info section-space--mt_60">
+                    <h6>ارتباط با ما</h6>
+                    <p class="tm1">تهران، میدان فردوسی، بلوار فردوسی، فروشگاه هلندو<br />
+                        example@info.com </p>
+                    <p class="tm-ltr tm2">
+                        021 0000 0000 </p>
+                </div>
+
+
 
 
             </div>
@@ -1093,107 +1563,123 @@
 
 
     <!--  offcanvas Minicart Start -->
-    <div class="offcanvas-minicart_wrapper" id="miniCart"> 
-        <div class="offcanvas-menu-inner"> 
-            <div class="close-btn-box"> <a href="#" class="btn-close"><i class="icon-cross2"></i></a> 
-            </div>                 
-            <div class="minicart-content"> 
-                <ul class="minicart-list"> 
-                    <li class="minicart-product"> <a class="product-item_remove" href="javascript:void(0)"><i class="icon-cross2"></i></a> <a class="product-item_img"> <img class="img-fluid" style="width: 75px; height: 75px;" src="assets/images/pic/IMG_4259.JPG" alt="Product Image"/> </a> 
-                        <div class="product-item_content"> <a class="product-item_title" href="#">عنوان محصول</a> 
+    <div class="offcanvas-minicart_wrapper" id="miniCart">
+        <div class="offcanvas-menu-inner">
+            <div class="close-btn-box"> <a href="#" class="btn-close"><i class="icon-cross2"></i></a>
+            </div>
+            <div class="minicart-content">
+                <ul class="minicart-list">
+                    <li class="minicart-product"> <a class="product-item_remove" href="javascript:void(0)"><i
+                                class="icon-cross2"></i></a> <a class="product-item_img"> <img class="img-fluid"
+                                style="width: 75px; height: 75px;" src="assets/images/pic/IMG_4259.JPG"
+                                alt="Product Image" /> </a>
+                        <div class="product-item_content"> <a class="product-item_title" href="#">عنوان محصول</a>
                             <label>تعداد : <span>1</span>
-                            </label>                                 
+                            </label>
                             <label class="product-item_quantity">قیمت: <span> 19.000 تومان</span>
-                            </label>                                 
-                        </div>                             
-                    </li>                         
-                    <li class="minicart-product"> <a class="product-item_remove" href="javascript:void(0)"><i class="icon-cross2"></i></a> <a class="product-item_img"> <img class="img-fluid" style="width: 75px; height: 75px;" src="assets/images/pic/IMG_4260.JPG" alt="Product Image"/> </a> 
-                        <div class="product-item_content"> <a class="product-item_title" href="#">عنوان محصول</a> 
+                            </label>
+                        </div>
+                    </li>
+                    <li class="minicart-product"> <a class="product-item_remove" href="javascript:void(0)"><i
+                                class="icon-cross2"></i></a> <a class="product-item_img"> <img class="img-fluid"
+                                style="width: 75px; height: 75px;" src="assets/images/pic/IMG_4260.JPG"
+                                alt="Product Image" /> </a>
+                        <div class="product-item_content"> <a class="product-item_title" href="#">عنوان محصول</a>
                             <label>تعداد : <span>1</span>
-                            </label>                                 
+                            </label>
                             <label class="product-item_quantity">قیمت: <span> 19.000 تومان</span>
-                            </label>                                 
-                        </div>                             
-                    </li>                        
-                    <li class="minicart-product"> <a class="product-item_remove" href="javascript:void(0)"><i class="icon-cross2"></i></a> <a class="product-item_img"> <img class="img-fluid" style="width: 75px; height: 75px;" src="assets/images/pic/IMG_3923.JPG" alt="Product Image"/> </a> 
-                        <div class="product-item_content"> <a class="product-item_title" href="#">عنوان محصول</a> 
+                            </label>
+                        </div>
+                    </li>
+                    <li class="minicart-product"> <a class="product-item_remove" href="javascript:void(0)"><i
+                                class="icon-cross2"></i></a> <a class="product-item_img"> <img class="img-fluid"
+                                style="width: 75px; height: 75px;" src="assets/images/pic/IMG_3923.JPG"
+                                alt="Product Image" /> </a>
+                        <div class="product-item_content"> <a class="product-item_title" href="#">عنوان محصول</a>
                             <label>تعداد : <span>1</span>
-                            </label>                                 
+                            </label>
                             <label class="product-item_quantity">قیمت: <span> 19.000 تومان</span>
-                            </label>                                 
-                        </div>                             
-                    </li>                        
-                </ul>                     
-            </div>                 
-            <div class="minicart-item_total"> <span class="font-weight--reguler">مجموع قیمت:</span> <span class="ammount font-weight--reguler">87.000 تومان</span> 
-            </div>                 
-            <div class="minicart-btn_area"> <a href="#" class="btn btn--full btn--border_1">مشاهده سبد خرید</a> 
-            </div>                 
-            <div class="minicart-btn_area"> <a href="#" class="btn btn--full btn--black">ثبت نهایی</a> 
-            </div>                 
-        </div>             
-        <div class="global-overlay"></div>             
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="minicart-item_total"> <span class="font-weight--reguler">مجموع قیمت:</span> <span
+                    class="ammount font-weight--reguler">87.000 تومان</span>
+            </div>
+            <div class="minicart-btn_area"> <a href="#" class="btn btn--full btn--border_1">مشاهده سبد خرید</a>
+            </div>
+            <div class="minicart-btn_area"> <a href="#" class="btn btn--full btn--black">ثبت نهایی</a>
+            </div>
+        </div>
+        <div class="global-overlay"></div>
     </div>
     <!--  offcanvas Minicart End -->
 
 
     <!--====================  search overlay ====================-->
-    <div class="search-overlay" id="search-overlay"> 
-            <div class="search-overlay__header"> 
-                <div class="container"> 
-                    <div class="row align-items-center"> 
-                        <div class="col-lg-6 col-8"> 
-                            <div class="search-title"> 
-                                <h4 class="font-weight--normal">جستجو</h4> 
-                            </div>                             
-                        </div>                         
-                        <div class="col-md-6 ms-auto col-4"> 
-                            <!-- search content -->                             
-                            <div class="search-content text-end"> <span class="mobile-navigation-close-icon" id="search-close-trigger"><i class="icon-cross"></i></span> 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>                 
-            </div>             
-            <div class="search-overlay__inner"> 
-                <div class="search-overlay__body"> 
-                    <div class="search-overlay__form"> 
-                        <div class="container"> 
-                            <div class="row"> 
-                                <div class="col-lg-9 m-auto"> 
-                                    <form action="#"> 
-                                        <div class="product-cats section-space--mb_60 text-center"> 
-                                            <label> 
-                                                <input type="radio" name="product_cat" value="" checked="checked"/> <span class="line-hover">همه</span> 
-                                            </label>                                             
-                                            <label> 
-                                                <input type="radio" name="product_cat" value="decoration"/> <span class="line-hover">تزیین</span> 
-                                            </label>                                             
-                                            <label> 
-                                                <input type="radio" name="product_cat" value="furniture"/> <span class="line-hover">مبلمان</span> 
-                                            </label>                                             
-                                            <label> 
-                                                <input type="radio" name="product_cat" value="table"/> <span class="line-hover">میز</span> 
-                                            </label>                                             
-
-                                            <label> 
-                                                <input type="radio" name="product_cat" value="chair"/> <span class="line-hover">صندلی</span> 
-                                            </label>                                             
-                                        </div>                                         
-                                        <div class="search-fields"> 
-                                            <input type="text" placeholder="جستجو"/> 
-                                            <button class="submit-button">
-                                                <i class="icon-magnifier"></i>
-                                            </button>                                             
-                                        </div>                                         
-                                    </form>                                     
-                                </div>                                 
-                            </div>                             
-                        </div>                         
-                    </div>                     
-                </div>                 
-            </div>             
+    <div class="search-overlay" id="search-overlay">
+        <div class="search-overlay__header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-8">
+                        <div class="search-title">
+                            <h4 class="font-weight--normal">جستجو</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 ms-auto col-4">
+                        <!-- search content -->
+                        <div class="search-content text-end"> <span class="mobile-navigation-close-icon"
+                                id="search-close-trigger"><i class="icon-cross"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <div class="search-overlay__inner">
+            <div class="search-overlay__body">
+                <div class="search-overlay__form">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-9 m-auto">
+                                <form action="#">
+                                    <div class="product-cats section-space--mb_60 text-center">
+                                        <label>
+                                            <input type="radio" name="product_cat" value="" checked="checked" /> <span
+                                                class="line-hover">همه</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="product_cat" value="decoration" /> <span
+                                                class="line-hover">تزیین</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="product_cat" value="furniture" /> <span
+                                                class="line-hover">مبلمان</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="product_cat" value="table" /> <span
+                                                class="line-hover">میز</span>
+                                        </label>
+
+                                        <label>
+                                            <input type="radio" name="product_cat" value="chair" /> <span
+                                                class="line-hover">صندلی</span>
+                                        </label>
+                                    </div>
+                                    <div class="search-fields">
+                                        <input type="text" placeholder="جستجو" />
+                                        <button class="submit-button">
+                                            <i class="icon-magnifier"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--====================  End of search overlay  ====================-->
 
 
@@ -1224,6 +1710,8 @@
 
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/js.js"></script>
+
 
 
 </body>
@@ -1232,4 +1720,5 @@
 <!--   =>helendo/product-details-two.html  <=  21:56:12 GMT -->
 
 <!-- <= Uploaded @ https://market.radib.com => helendo/product-details-two.html <= RTL by HesDesign =>  13:53:18 GMT -->
+
 </html>
