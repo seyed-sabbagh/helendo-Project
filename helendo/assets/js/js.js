@@ -221,6 +221,60 @@ function setImage() {
 
     // Set the background color of the second page
     document.getElementById('newImage').src = imageAddressNewPage;
-    document.getElementById('productContent').innerHTML =  "کد " + productContent;
+    document.getElementById('productContent').innerHTML = "کد " + productContent;
 
+}
+
+function getImageDetailHomePage13() {
+    const imageAddress = document.getElementById('ImageHome13').src;
+
+    const productContent = document.getElementById('product-Home-content-13').text;
+    localStorage.setItem('productContent', productContent);
+    localStorage.setItem('imageAddress', imageAddress);
+
+    // Redirect to the second page
+    window.location.href = 'product-details-two.html';
+
+    console.log(imageAddress);
+}
+
+function getImageDetailHomePage2383() {
+    const imageAddress = document.getElementById('ImageHome2383').src;
+
+    const productContent = document.getElementById('product-Home-content-2383').text;
+    localStorage.setItem('productContent', productContent);
+    localStorage.setItem('imageAddress', imageAddress);
+
+    // Redirect to the second page
+    window.location.href = 'product-details-two.html';
+
+    console.log(imageAddress);
+}
+
+
+function getImageDetailHomePage4344() {
+    const imageAddress = document.getElementById('ImageHome4344').src;
+
+    const productContent = document.getElementById('product-Home-content-4344').text;
+    localStorage.setItem('productContent', productContent);
+    localStorage.setItem('imageAddress', imageAddress);
+
+    // Redirect to the second page
+    window.location.href = 'product-details-two.html';
+
+    console.log(imageAddress);
+}
+
+
+function getImageDetailHomePage4346() {
+    const imageAddress = document.getElementById('ImageHome4346').src;
+
+    const productContent = document.getElementById('product-Home-content-4346').text;
+    localStorage.setItem('productContent', productContent);
+    localStorage.setItem('imageAddress', imageAddress);
+
+    // Redirect to the second page
+    window.location.href = 'product-details-two.html';
+
+    console.log(imageAddress);
 }
