@@ -15796,11 +15796,11 @@ body {
   }
 
 footer.preview-footer-area.bg-img {
-    background-image: url(../images/footer.jpg) !important;
+    background-image: url(../images/footer.webp) !important;
 }
 
 .single-hero-slider-one.bg-img {
-    background-image: url(../images/preview-hero.jpg);
+    background-image: url(../images/preview-hero.webp);
 }
 
 .tm1 {
