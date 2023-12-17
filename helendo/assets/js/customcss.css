@@ -1,0 +1,13 @@
+
+.setmin-width{
+
+@media (min-height:1200px)  {
+
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    width: 100% !important;
+
+
+}
+
+}
