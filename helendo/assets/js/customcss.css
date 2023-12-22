@@ -1,8 +1,11 @@
 @media  only screen and (max-width: 800px) {
   .sampleclass {
-   height: 250px !important;
+   height: 200px !important;
 }
 .footermarginclass{
     margin-top: 300px;
+}
+.classforimageone{
+margin-bottom: -100px;  
 }
 }
